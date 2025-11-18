@@ -1,5 +1,11 @@
 # React_Training_Hindi
 
+## Create & Run react project
+npm create vite
+cd react-blog
+npm install
+npm run dev
+
 ## basic Toipcs to be covered
 - Setup
 - Basics

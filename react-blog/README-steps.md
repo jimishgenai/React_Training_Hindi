@@ -33,5 +33,10 @@ https://www.youtube.com/watch?v=lNCo0Q9cKOY&list=PL8p2I9GklV463WUKdVzUZ17IDZ3Swo
 # React Testing Library with Jest Hindi: code step by step
 https://www.youtube.com/playlist?list=PL8p2I9GklV47ZpFC9sNHTXwJRgwwzdkNG
 
+# React js full course in Hindi | with Project Deployment
+https://www.youtube.com/watch?v=nf57giqUuJQ
+Crash course + project + deployment. 
+Good for practical understanding + seeing how to deploy a React app.
+
 # Anurag Singh Pr-coder
 https://www.youtube.com/playlist?list=PLfEr2kn3s-bqpPUbeTZP6iRXTxTLwNB7F

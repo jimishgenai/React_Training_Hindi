@@ -1,7 +1,9 @@
 function Header(){
     return(
-        <h1>This is the Header</h1>
+        <header>
+            This is Header Component
+        </header>
     )
 }
 
-export default Header; 
+export default Header;

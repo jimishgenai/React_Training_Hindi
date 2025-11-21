@@ -1,13 +1,12 @@
-import Header from "./Header";
+import Header from "./Header";  
 
-function App(){
+function Apple(){
   return(
-    <div>
+    <>
+      <h1>This is Apple</h1>
       <Header />
-      <h1>Hello React</h1>
-      <h2>Code Step by Step</h2>
-    </div>
+    </>
   )
 }
 
-export default App;
+export default Apple;

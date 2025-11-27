@@ -27,8 +27,11 @@ npm run dev
 # GITHUB Repo
 https://github.com/jimishgenai/React_Training_Hindi/tree/React-training
 
-# React tutoruals in Hindi: code step by step
-https://www.youtube.com/watch?v=lNCo0Q9cKOY&list=PL8p2I9GklV463WUKdVzUZ17IDZ3SwoSTu&index=6
+# Atos React Training
+https://atos.percipio.com/linked-contents/c9ce57bd-3f46-48fa-9fdc-9bb65eb10b2c/landing
+
+# React tutorials in Hindi: code step by step
+https://www.youtube.com/watch?v=DXCI60Bbuow&list=PL8p2I9GklV463WUKdVzUZ17IDZ3SwoSTu&index=8
 
 # React Testing Library with Jest Hindi: code step by step
 https://www.youtube.com/playlist?list=PL8p2I9GklV47ZpFC9sNHTXwJRgwwzdkNG

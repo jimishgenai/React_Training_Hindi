@@ -1,35 +1,14 @@
-import Header from "./Header";  
+import Header from './Header.jsx';
 
-function Apple(){
-  console.log("Sum is: " + sum());
-  alert("Sum is: " + sum());
+function App(){
   return(
-    <>
-      <h1>This is Apple</h1>
-      <Fruits />
-      <Colors />
-    </>
+
+    <div>
+      <Header />
+      <h1>Hello React</h1>
+      <h2>Code Step by Step</h2>
+    </div>
   )
 }
 
-function Fruits(){
-  return(
-    <>
-      <h1>This is Fruits Component</h1>
-    </>
-  )
-}
-
-function Colors(){
-  return(
-    <>
-      <h1>This is Colors Component</h1>
-    </>
-  )
-}
-
-function sum(){
-  return 4+6
-}
-
-export default Apple;
+export default App;

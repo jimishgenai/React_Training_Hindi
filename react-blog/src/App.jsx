@@ -1,14 +1,15 @@
 import React from "react";
-import {UserComponent, Profile, EmployeeDetails} from "./components/UserComponent";
+import {ProductList} from "./components/ProductList";
+import {TableComponent} from "./components/TableComponent";
+
 
 function App(){
   // alert(sum())
   return(
     <div>
       <h1>App Component</h1>
-      <UserComponent />
-      <Profile />
-      <EmployeeDetails />
+      <ProductList />
+      <TableComponent />
     </div>
   )
 }

@@ -1,12 +1,14 @@
-import Header from './Header.jsx';
+import React from "react";
+import {UserComponent, Profile, EmployeeDetails} from "./components/UserComponent";
 
 function App(){
+  // alert(sum())
   return(
-
     <div>
-      <Header />
-      <h1>Hello React</h1>
-      <h2>Code Step by Step</h2>
+      <h1>App Component</h1>
+      <UserComponent />
+      <Profile />
+      <EmployeeDetails />
     </div>
   )
 }

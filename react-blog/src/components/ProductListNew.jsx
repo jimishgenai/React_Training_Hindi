@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 
-export const ProductList = () => {
+export const ProductListNew = () => {
     const [name, setName] = useState("");
     const [quantity, setQuantity] = useState("");
     const [price, setPrice] = useState("");
     const [state, setState] = useState("");
-
-    // const [listName, setListName] = useState([]);
-    // const [listQuantity, setListQuantity] = useState([]);
-    // const [listPrice, setListPrice] = useState([]);
 
     const [products, setProducts] = useState([])
     const [editIndex, setEditIndex] = useState(null);
@@ -16,30 +12,17 @@ export const ProductList = () => {
     const addOrUpdate = () => {
         if (editIndex !== null) {
             // UPDATE
-            // const updatedName = [...listName];
-            // const updated = [...setProducts];
             const updated = [...products];
-            // updatedName[editIndex] = name;
             updated[editIndex] = { name, quantity, price, state };
-
-            // const updatedQuantity = [...listQuantity];
-            // updatedQuantity[editIndex] = quantity;
-
-            // const updatedListPrice = [...listPrice];
-            // updatedListPrice[editIndex] = price;
-            // setList(updated);
 
             setProducts(updated)
             setEditIndex(null);
         } else {
             // ADD
-            // setList([...listName, name]);
-            // setList([...listQuantity, quantity]);
-            // setList([...listPrice, price]);
             setProducts(
                 [
-                ...products,
-                { name, quantity, price, state }
+                    ...products,
+                    { name, quantity, price, state }
                 ]
             )
         }
@@ -51,18 +34,7 @@ export const ProductList = () => {
     };
 
     const editItem = (i) => {
-        // const items = products[i]
         const item = products[i]
-
-        // setName(list[i]);
-        // setQuantity(list[i]);
-        // setPrice(list[i]);
-        // setState(list[i]);
-
-        // setName(items[i]);
-        // setQuantity(items[i]);
-        // setPrice(items[i]);
-        // setState(items[i]);
 
         setName(item.name);
         setQuantity(item.quantity);
@@ -73,8 +45,6 @@ export const ProductList = () => {
     };
 
     const deleteItem = (i) => {
-        // setList(list.filter((_, index) => index !== i));
-        // setList(list.products((_, index) => index !== i));
         setProducts(products.filter((_, index) => index !== i));
     };
 
@@ -118,11 +88,10 @@ export const ProductList = () => {
                         <th>Price</th>
                         <th>Actions</th>
                         <th>State</th>
-                    </tr>                    
+                    </tr>
                 </thead>
                 <tbody>
                     {
-                        // items.map(
                         products.map(
                             (item, i) => (
                                 <tr key={i}>

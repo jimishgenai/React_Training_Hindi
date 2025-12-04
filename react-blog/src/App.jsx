@@ -1,15 +1,14 @@
 import React from "react";
-import {ProductList} from "./components/ProductList";
-import {TableComponent} from "./components/TableComponent";
+// import {ProductListNew} from "./components/ProductListNew";
+import {ProductPage} from "./components/ProductPage";
 
 
 function App(){
   // alert(sum())
   return(
-    <div>
-      <h1>App Component</h1>
-      <ProductList />
-      <TableComponent />
+    <div className="container">
+      {/* <ProductListNew /> */}
+      <ProductPage />
     </div>
   )
 }

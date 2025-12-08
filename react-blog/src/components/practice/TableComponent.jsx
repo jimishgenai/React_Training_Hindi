@@ -1,7 +1,7 @@
 import { useState } from "react"
 import React from "react"
 
-export const TableComponent = () => {
+function TableComponent() {
     // create table header
     const [form, setForm] = useState({
         name: "",
@@ -76,5 +76,6 @@ export const TableComponent = () => {
             </form>
         </div>
     );
-
 }
+
+export default TableComponent;

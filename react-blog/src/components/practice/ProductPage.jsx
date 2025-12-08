@@ -1,5 +1,5 @@
 import React, { Suspense, useEffect, useState } from "react";
-import {ReusableTable} from "./ReusableTable.jsx"
+import { ReusableTable } from "./ReusableTable";
  
 const fetchMockData = () =>
   Promise.resolve({
@@ -10,7 +10,7 @@ const fetchMockData = () =>
     ],
   });
  
-export const ProductPage = () => {
+function ProductPage() {
   const [products, setProducts] = useState([]);
   const [form, setForm] = useState({ name: "", quantity: "", price: "" });
   const [editingId, setEditingId] = useState(null);
@@ -109,4 +109,4 @@ export const ProductPage = () => {
     </div>
   );
 };
-// export default ProductPage;
+export default ProductPage;

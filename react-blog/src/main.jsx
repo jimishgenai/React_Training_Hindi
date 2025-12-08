@@ -5,7 +5,9 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import DisplayPosts from "./components/practice/DisplayPosts";
 import ProductListNew from "./components/practice/ProductListNew";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import ProductPage from "./components/practice/ProductPage";
+import TableComponent from "./components/practice/TableComponent";
+
 
 
 const router = createBrowserRouter([
@@ -14,7 +16,9 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: "", element: <DisplayPosts /> },
-      { path: "ProductList", element: <ProductListNew /> }
+      { path: "ProductList", element: <ProductListNew /> },
+      { path: "ProductPage", element: <ProductPage /> },
+      { path: "TableComponent", element: <TableComponent /> }
     ],
   },
 ]);

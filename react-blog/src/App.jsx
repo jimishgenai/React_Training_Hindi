@@ -1,14 +1,14 @@
 import React from "react";
-// import {ProductListNew} from "./components/ProductListNew";
-import {ProductPage} from "./components/ProductPage";
+// import {ProductListNew} from "./components/practice/ProductListNew";
+// import {ProductListHandler} from "./components/practice/ProductListHandler";
+// import { ProductListHandler } from "./components/Practice/ProductListHandler.jsx";
+import DisplayPosts from "./components/practice/DisplayPosts";
 
 
 function App(){
-  // alert(sum())
   return(
     <div className="container">
-      {/* <ProductListNew /> */}
-      <ProductPage />
+      <DisplayPosts />
     </div>
   )
 }

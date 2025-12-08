@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const ProductListNew = () => {
+function ProductListNew() {
     const [name, setName] = useState("");
     const [quantity, setQuantity] = useState("");
     const [price, setPrice] = useState("");
@@ -112,3 +112,5 @@ export const ProductListNew = () => {
         </div>
     );
 };
+
+export default ProductListNew;

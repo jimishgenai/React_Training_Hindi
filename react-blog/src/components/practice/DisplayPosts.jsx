@@ -11,12 +11,12 @@ const DisplayPosts = () => {
   // Fetch Data inside useEffect()
   /**
    * 
-    useEffect() Syntax
-        useEffect(
-      () => {
+   useEffect() Syntax
+      useEffect(
+    () => {
 
-      }
-    ), [dependencies]
+    }
+  ), [dependencies]
    */
 
   useEffect(

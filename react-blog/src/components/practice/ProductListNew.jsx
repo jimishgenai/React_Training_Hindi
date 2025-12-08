@@ -54,18 +54,21 @@ function ProductListNew() {
 
             <input
                 type="text"
+                className="me-3"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Enter Name"
             />
             <input
                 type="number"
+                className="me-3"
                 value={quantity}
                 onChange={(e) => setQuantity(e.target.value)}
                 placeholder="Enter Quantity"
             />
             <input
                 type="number"
+                className="me-3"
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}
                 placeholder="Enter Price"
@@ -76,11 +79,11 @@ function ProductListNew() {
                 onChange={(e) => setState(e.target.value)}
                 placeholder="Enter State"
             />
-            <button onClick={addOrUpdate}>
+            <button className="ms-3 btn btn-primary" onClick={addOrUpdate}>
                 {editIndex !== null ? "Update" : "Add"}
             </button>
 
-            <table className="table">
+            <table className="table mt-4">
                 <thead>
                     <tr>
                         <th>Name</th>

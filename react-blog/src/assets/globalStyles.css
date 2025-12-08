@@ -1,8 +1,7 @@
 a {
     color: #fff !important;
     text-decoration: none;
-
-    :hover{
-        color: red;
-    }
+}
+a:hover{
+    color: red !important;
 }

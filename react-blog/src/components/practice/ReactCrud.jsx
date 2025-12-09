@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function ProductListNew() {
+function ReactCrud() {
     const [name, setName] = useState("");
     const [quantity, setQuantity] = useState("");
     const [price, setPrice] = useState("");
@@ -103,8 +103,8 @@ function ProductListNew() {
                                     <td> &#x20b9; {item.price}</td>
                                     <td> {item.state}</td>
                                     <td>
-                                        <button onClick={() => editItem(i)}>Edit</button>
-                                        <button onClick={() => deleteItem(i)}>Delete</button>
+                                        <button className="me-3 btn btn-primary" onClick={() => editItem(i)}>Edit</button>
+                                        <button className="btn btn-primary" onClick={() => deleteItem(i)}>Delete</button>
                                     </td>
                                 </tr>
                             )
@@ -116,4 +116,4 @@ function ProductListNew() {
     );
 };
 
-export default ProductListNew;
+export default ReactCrud;

@@ -7,9 +7,9 @@ function App() {
     <div className="container-fluid">
       <h2>Navigation</h2>
 
-      <ul className="nav nav-pills nav-fill">
+      <ul className="nav nav-pills nav-fill my-4">
         <li className="nav-item"><Link to="/">Home</Link></li>
-        <li className="nav-item"><Link to="/ProductList">CRUD</Link></li>
+        <li className="nav-item"><Link to="/ReactCrud">CRUD Operation</Link></li>
         <li className="nav-item"><Link to="/ProductPage">Product Page</Link></li>
         <li className="nav-item"><Link to="/TableComponent">Table Component</Link></li>
       </ul>

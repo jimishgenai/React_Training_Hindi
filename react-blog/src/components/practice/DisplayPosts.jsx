@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import loader from "../../assets/loader.gif"
 
 // useEffect() → To run the API call when the component loads
 // fetch() → To get data
@@ -6,8 +7,8 @@ import React, { useState, useEffect } from "react"
 // Display results in a simple list
 
 const DisplayPosts = () => {
-  const [posts, setPosts] = useState([])
-
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
   // Fetch Data inside useEffect()
   /**
    * 
@@ -22,15 +23,40 @@ const DisplayPosts = () => {
   useEffect(
     () => {
       fetch("https://jsonplaceholder.typicode.com/posts")
-      .then((response) => response.json()).then(
-        (data) => setPosts(data)).catch(
-        (error) => {
-          console.log("Error", error);
-        }
-      )
+        .then((response) => response.json()).then(
+          (data) => {
+            setPosts(data);
+            setLoading(false);
+          }).catch(
+            (error) => {
+              console.log("Error", error);
+              setLoading(false);
+            }
+          )
     }, []
   );
   // End useEffect()
+
+  // Show loader image while API is fetching
+  if (loading) {
+    return (
+      <div
+        style={{
+          padding: "20px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "200px",
+        }}
+      >
+        <img
+          src={loader}
+          alt="Loading..."
+          style={{ width: "250px", height: "100px" }}
+        />
+      </div>
+    );
+  }
 
   return (
     <div style={{ padding: "20px" }}>

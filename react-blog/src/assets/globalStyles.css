@@ -1,11 +1,12 @@
 a {
     border: 1px solid blue;
     border-radius: 5px;
-    color: blue!important;
+    color: blue !important;
     padding: 0.5em;
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     background: blue;
     color: #fff !important;
 }

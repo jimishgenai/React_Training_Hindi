@@ -8,7 +8,10 @@ export default function Navbar() {
                 to="/">Display Posts</NavLink>
             <NavLink 
                 className= {({ isActive }) => isActive ? "d-block nav-link active" : "nav-link"} 
-                to="/ReactCrud">React Crud</NavLink>   
+                to="/ReactCrud">React Crud</NavLink>  
+            <NavLink 
+                className= {({ isActive }) => isActive ? "d-block nav-link active" : "nav-link"} 
+                to="/UserContextData">User Context Data</NavLink>   
         </nav>
     )
 };

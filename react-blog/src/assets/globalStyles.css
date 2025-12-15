@@ -2,11 +2,28 @@ a {
     border: 1px solid blue;
     border-radius: 5px;
     color: blue !important;
+    font-weight: bold;
+    margin-bottom: 10px;
     padding: 0.5em;
     text-decoration: none;
 }
 
-a:hover {
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
     background: blue;
     color: #fff !important;
+}
+
+.loader {
+  width: 120px;
+  height: 20px;
+  margin: 10em auto;
+  -webkit-mask:linear-gradient(90deg,#000 70%,#0000 0) 0/20%;
+  background:
+   linear-gradient(#000 0 0) 0/0% no-repeat
+   #ddd;
+  animation: l4 2s infinite steps(6);
+}
+@keyframes l4 {
+    100% {background-size:120%}
 }

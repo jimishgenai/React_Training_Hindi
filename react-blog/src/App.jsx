@@ -6,11 +6,13 @@ import { useState } from 'react';
 
 
 function App() {
-  const [user, setUser] = useState({
+  const initialMockUser = [{
     name: 'John Doe',
     email: 'test@test.com',
     age: 30,
-  });
+  }];
+
+  const [user, setUser] = useState(initialMockUser);
 
     return (
       <UserContext.Provider value={{ user, setUser }}>

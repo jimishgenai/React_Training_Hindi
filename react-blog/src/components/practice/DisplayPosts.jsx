@@ -41,21 +41,24 @@ const DisplayPosts = () => {
   // Show loader image while API is fetching
   if (loading) {
     return (
+      // <div
+      // className="loader"
+      //   style={{
+      //     padding: "20px",
+      //     display: "flex",
+      //     justifyContent: "center",
+      //     alignItems: "center",
+      //     height: "200px",
+      //   }}
+      // >
+      //   <img
+      //     src={loader}
+      //     alt="Loading..."
+      //     style={{ width: "250px", height: "100px" }}
+      //   />
+      // </div>
       <div
-        style={{
-          padding: "20px",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "200px",
-        }}
-      >
-        <img
-          src={loader}
-          alt="Loading..."
-          style={{ width: "250px", height: "100px" }}
-        />
-      </div>
+      className="loader"></div>
     );
   }
 

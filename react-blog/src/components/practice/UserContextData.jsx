@@ -1,50 +1,75 @@
-import React, { useContext } from 'react';
-import { UserContext } from '../../customContex/UserContext.js';
+import React, { useContext } from "react";
+import { UserContext } from "../../customContex/UserContext.js";
 
-const UserContextData = () => {
-    // Get user and setUser from context
-    const { user, setUser } = useContext(UserContext);
+export default function UserContextData() {
+  // STEP 1: Get values from context
+  const { user, setUser } = useContext(UserContext);
 
-    // Simple function to update user
-    function updateUser() {
-        setUser({
-            name: "Jimish Shah",
-            email: "jimish.shah@example.com",
-            age: 48
-        })
-        
-    }
+  console.log("User Data:", user);
 
-    function updateUserNew() {
-        setUser({
-            name: "Raj Dev",
-            email: "raj.dev@example.com",
-            age: 48
-        })
-    }
+  // STEP 2: Function to update FIRST user
+  function updateFirstUser() {
+    const newUsers = [...user]; // Copy array
 
-    return (
-        <div style={{ padding: '20px' }}>
-            <h2>Post Data</h2>
-            {/* Show some other user data for demo */}
-            <div style={{ marginBottom: '16px', background: '#e0f7fa', padding: '10px', borderRadius: '6px' }}>
-                <strong>Other User Data:</strong>
-                <div>Name: {user?.nameNew}</div>
-                <div>Email: {user?.emailNew}</div>
-                <div>Age: {user?.ageNew}</div>
-                <button onClick={updateUserNew} style={{marginTop: '10px'}}>Change 1st User</button>
-            </div>
-            {/* Show context user data and update button */}
-            <div style={{ marginBottom: '16px', background: '#f5f5f5', padding: '10px', borderRadius: '6px' }}>
-                <strong>User Data from Context:</strong>
-                <div>Name: {user?.name}</div>
-                <div>Email: {user?.email}</div>
-                <div>Age: {user?.age}</div>
-                <button onClick={updateUser} style={{marginTop: '10px'}}>Change 2nd User</button>
-            </div>
-        </div>
-    );
+    newUsers[0] = {
+      name: "Manish Singh",
+      email: "manish@test.com",
+      age: 35,
+    };
+
+    setUser(newUsers); // Update context
+  }
+
+  // STEP 3: Function to update/add SECOND user
+  function updateSecondUser() {
+    const newUsers = [...user];
+
+    newUsers[1] = {
+      name: "Ramesh",
+      email: "ramesh@test.com",
+      age: 55,
+    };
+
+    setUser(newUsers);
+  }
+
+  return (
+    <div style={{ padding: "20px" }}>
+      <h2>User Context Example</h2>
+
+      {/* STEP 4: Display FIRST user */}
+      <div
+        style={{
+          marginBottom: "14px",
+          padding: "12px",
+          background: "#e3f2fd",
+          borderRadius: "6px",
+        }}
+      >
+        <strong>First User:</strong>
+        <p>Name: {user[0]?.name}</p>
+        <p>Email: {user[0]?.email}</p>
+        <p>Age: {user[0]?.age}</p>
+
+        <button onClick={updateFirstUser}>Update 1st User</button>
+      </div>
+
+      {/* STEP 5: Display SECOND user */}
+      <div
+        style={{
+          marginBottom: "14px",
+          padding: "12px",
+          background: "#f1f8e9",
+          borderRadius: "6px",
+        }}
+      >
+        <strong>Second User:</strong>
+        <p>Name: {user[1]?.name || "-"}</p>
+        <p>Email: {user[1]?.email || "-"}</p>
+        <p>Age: {user[1]?.age || "-"}</p>
+
+        <button onClick={updateSecondUser}>Update 2nd User</button>
+      </div>
+    </div>
+  );
 }
-
-export default UserContextData;
-

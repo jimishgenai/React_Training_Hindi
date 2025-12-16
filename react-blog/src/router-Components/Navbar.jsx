@@ -12,6 +12,9 @@ export default function Navbar() {
             <NavLink 
                 className= {({ isActive }) => isActive ? "d-block nav-link active" : "nav-link"} 
                 to="/UserContextData">User Context Data</NavLink>   
+            <NavLink 
+                className= {({ isActive }) => isActive ? "d-block nav-link active" : "nav-link"} 
+                to="/ReduxPractice">Redux Practice</NavLink>   
         </nav>
     )
 };

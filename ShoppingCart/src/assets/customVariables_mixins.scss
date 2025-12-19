@@ -1,0 +1,14 @@
+$isWhite: #fff;
+$isBlack: #000;
+$isZero: 0;
+$isNone: none;
+
+@mixin isReset($isMargin, $isPadding){
+    margin: $isMargin;
+    padding: $isPadding;
+}
+@mixin isBodyProps($isBg, $isColor){
+    background: $isBg;
+    color: $isColor;
+    @include isReset($isZero, $isZero);
+}

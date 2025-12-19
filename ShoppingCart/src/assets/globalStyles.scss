@@ -1,0 +1,5 @@
+@use './customVariables_mixins.scss'as *;
+
+body{
+    @include isBodyProps($isWhite, $isBlack);
+}
